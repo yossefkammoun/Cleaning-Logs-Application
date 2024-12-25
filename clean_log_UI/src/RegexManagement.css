@@ -1,0 +1,133 @@
+/* RegexManagement.css */
+
+/* General Container Styling */
+.regex-management-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center horizontally */
+  justify-content: center;  /* Center vertically */
+  min-height: 100vh;  /* Ensure it takes full screen height */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;  /* Center text */
+  margin: 0; /* Remove any default margin */
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Add Regex Button */
+.add-regex-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-regex-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Small hover effect */
+}
+
+/* Table Styles */
+.regex-table {
+  width: 100%; /* Take up all horizontal space */
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 30px;  /* Add space below the table */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.regex-table th, .regex-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  word-wrap: break-word;  /* Ensure text wraps in cells */
+}
+
+.regex-table th {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+}
+
+.regex-table td {
+  background-color: #f4f4f4;
+}
+
+.regex-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styles for Actions */
+.update-btn, .delete-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 15px;
+}
+
+.update-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background-color: #FF5733;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .regex-table th, .regex-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .add-regex-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .update-btn, .delete-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* Adjust the container padding for smaller screens */
+  .regex-management-container {
+    padding: 10px;
+  }
+}

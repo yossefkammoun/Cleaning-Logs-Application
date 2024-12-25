@@ -1,0 +1,95 @@
+/* Home.css */
+
+body, html {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.home-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #fafafa; /* Light background color */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.home-title {
+    text-align: center;
+    color: #2c3e50; /* Darker text for title */
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.home-description {
+    text-align: center;
+    color: #7f8c8d; /* Softer gray for description */
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.key-features, .audience-target {
+    justify-content: center;
+    background-color: #ffffff; /* White background for content sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.key-features h2, .audience-target h2 {
+    text-align: center;
+    color: #2980b9; /* Blue color for headings */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.key-features ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.key-features ul li {
+    color: #34495e; /* Slightly darker gray for list items */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.audience-target p {
+    color: #34495e; /* Same color for paragraph text */
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 28px;
+    }
+
+    .home-description {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .key-features h2, .audience-target h2 {
+        font-size: 24px;
+    }
+
+    .key-features ul li, .audience-target p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,67 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the page */
+    background-color: #333;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better look */
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0; /* Padding on top and bottom */
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px; /* Space between each item */
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600; /* Make the font bold for a better look */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for links */
+  nav ul li a:hover {
+    color: #ff6f61; /* Color change on hover */
+    text-decoration: underline;
+  }
+  
+  /* Active link styling */
+  nav ul li a.active {
+    color: #ff6f61;
+    text-decoration: underline;
+  }
+  
+  /* Spacing for content below the navbar */
+  .content {
+    padding-top: 60px; /* Prevent content from being hidden behind the navbar */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* More space between items */
+    }
+  }
+  

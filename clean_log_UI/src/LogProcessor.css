@@ -1,0 +1,107 @@
+/* LogProcessor.css */
+
+.log-processor-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 80%;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.input-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #45a049;
+}
+
+.textarea {
+  width: 48%;
+  height: 300px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  resize: none;
+}
+
+.textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .log-processor-container {
+    padding: 20px;
+  }
+
+  .input-group input {
+    width: 60%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .actions button {
+    width: 48%;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
